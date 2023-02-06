@@ -328,3 +328,16 @@ body {
     }
   }
 }
+
+.pizza-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  &-image {
+    height: 25rem;
+    width: 25rem;
+  }
+}

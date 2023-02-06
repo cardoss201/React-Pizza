@@ -32,10 +32,29 @@ const PizzaInfo: React.FC = () => {
   }
 
   return (
-    <div className='container'>
-      <img src={pizza.imageUrl} alt='pizza image' />
+    <div className='pizza-info'>
+      <img
+        src={pizza.imageUrl}
+        alt='pizza image'
+        className='pizza-info-image'
+      />
       <h2>{pizza.title}</h2>
-      <h4>{pizza.price} €</h4>
+      <h3>Alergens:</h3>
+      <ul className='list'>
+        <li>Wheat (gluten)</li>
+        <li>Dairy (milk, cheese)</li>
+        <li>Soy (soy sauce, tofu)</li>
+        <li>Eggs</li>
+        <li>Tree nuts (almonds, pine nuts)</li>
+        <li>Peanuts</li>
+        <li>Seafood (anchovies, shrimp)</li>
+        <li>Sesame seeds</li>
+        <li>Mustard</li>
+        <li>Garlic</li>
+        <li>Onions</li>
+        <li>Mushrooms</li>
+      </ul>
+      <h4>Price: {pizza.price} €</h4>
       <Link to='/' className='button button--outline button--add go-back-btn'>
         Go Back
       </Link>
