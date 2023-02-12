@@ -5,7 +5,6 @@ import Wrapper from './components/ui/Wrapper'
 import Header from './components/header/Header'
 import Container from './components/ui/Container'
 import Home from './pages/Home'
-// import Cart from './pages/Cart'
 import PizzaInfo from './pages/PizzaInfo'
 import NotFound from './pages/NotFound'
 
